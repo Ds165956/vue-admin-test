@@ -1,8 +1,25 @@
 <template>
   <div id="app">
-    <h1>hahaha</h1>
     <router-view />
   </div>
 </template>
-
-<style lang="less"></style>
+<script>
+export default {
+  data () {
+    return {
+      num: 6
+    }
+  },
+  methods: {
+    handleChange (value) {
+      console.log(value)
+    }
+  }
+}
+</script>
+<style lang="less">
+#app {
+  width: 100%;
+  height: 100%;
+}
+</style>
